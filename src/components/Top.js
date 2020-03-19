@@ -1,13 +1,10 @@
 import React from "react";
 
-
-
-function Top(props) {
-  
+function Top({title, date}) {
   return (
-    <div className="Card">
-      <h1>{props.title}</h1>
-      <h6>{props.date}</h6>
+    <div className="Top">
+      <h1>{title}</h1>
+      <h6>{date}</h6>
     </div>
   );
 }

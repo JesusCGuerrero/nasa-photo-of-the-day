@@ -1,15 +1,12 @@
 import React from "react";
 
-
-
-function Top(props) {
-  
+function Bottom(props) {
   return (
-    <div className="Card">
+    <div className="Bottom">
       <img src={props.img} alt="Nasa"/>
       <p>{props.explanation}</p>
     </div>
   );
 }
 
-export default Top;
+export default Bottom;
