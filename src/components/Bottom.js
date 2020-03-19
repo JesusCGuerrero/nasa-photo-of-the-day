@@ -4,7 +4,9 @@ function Bottom(props) {
   return (
     <div className="Bottom">
       <img src={props.img} alt="Nasa"/>
-      <p>{props.explanation}</p>
+      <div className="text-content">
+        <p>{props.explanation}</p>
+      </div>
     </div>
   );
 }

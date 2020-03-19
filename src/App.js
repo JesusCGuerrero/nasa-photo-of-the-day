@@ -3,7 +3,7 @@ import "./App.css";
 import axios from "axios"
 import Top from "./components/Top"
 import Bottom from "./components/Bottom"
-import Dropdown from "./components/Dropdown"
+import MyNav from "./components/Nav"
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import moment from "moment"
@@ -33,12 +33,13 @@ const handleOnChange = (newDate) => {
   console.log(data)
   return (
     <div className="App">
+        <MyNav />
+        <Top title={data.title}date={data.date}/>
         <DatePicker  
         selected={date}
         onChange={handleOnChange} //only when value has changed
         maxDate={Date.now()}
         />
-        <Top title={data.title}date={data.date}/>
         <Bottom  img={data.url} explanation={data.explanation} />
     </div>
   );

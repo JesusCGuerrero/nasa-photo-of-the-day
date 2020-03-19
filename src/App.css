@@ -83,3 +83,45 @@
 .show {
   display: block;
 }
+
+img {
+  max-width: 80%;
+  margin: 20px 0;
+}
+
+.text-content {
+  margin: 0 auto;
+  max-width: 80%;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 40px;
+  background-color: rgb(255, 255, 255);
+}
+
+p {
+  background-color: rgb(255, 255, 255);
+}
+
+input {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 12px;
+  background-color: rgb(100, 100, 100);
+  transition-duration: .4s;
+}
+
+input:hover {
+  background-color: white;
+  color: rgb(100, 100, 100);
+}
+
+* {
+  background-color: #ececec;
+}
+
+.nav-text-right {
+  margin-right: 10px;
+  font-weight: 500;
+  color: white;
+}
